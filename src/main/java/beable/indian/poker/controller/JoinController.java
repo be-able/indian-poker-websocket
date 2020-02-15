@@ -10,8 +10,8 @@ import beable.indian.poker.message.TestMessage;
 
 @Controller
 public class JoinController {
-	@MessageMapping("/app/hello")
-	@SendTo("/topic/greetings")
+	@MessageMapping("/connect")
+	@SendTo("/connect")
 	public Greeting join(TestMessage message) {
 		return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
 	}

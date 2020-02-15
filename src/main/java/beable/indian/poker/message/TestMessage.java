@@ -8,7 +8,7 @@ import lombok.Setter;
 public class TestMessage {
 	private String name;
 	
-	public TestMessage(String id) {
-		this.name = id;
+	public TestMessage(String name) {
+		this.name = name;
 	}
 }
